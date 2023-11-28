@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+
+* {
+    font-family: 'Alata', sans-serif;
+}
+
+li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: start;
+}
