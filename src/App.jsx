@@ -15,6 +15,7 @@ function App() {
           <h2 className='text-xs text-gray-400 md:text-sm md:indent-4'>Desenvolvedor Front-End</h2>
           <div className='flex flex-col text-center p-2 md:flex-row md:gap-8 md:mt-6'>
             <div className='flex items-center gap-2'>
+              
               <FaInbox className='text-sm text-gray-400' /> <p className='text-sm text-gray-400'>orlandopdjr6@gmail.com</p>
             </div>
             <div className='flex items-center gap-2'>
