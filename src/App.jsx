@@ -47,7 +47,7 @@ function App() {
         <section className='text-left ml-2'>
           <article className='divide-y-2 divide-y-reverse'>
             <h3 className='text-sm font-black py-2 md:text-2xl'>Perfil profissional</h3>
-            <p className='text-xs indent-4 pb-2 md:text-sm md:px-3'>Profissional com 10 anos na indústria calçadista, evoluindo de Cronoanalista para <br />  RH. Experiência em  liderança, gestão de equipe e adaptação rápida a novos desafios. <br /> Busco transição  para TI Front-End, brcombinando habilidades de liderança com vontade <br /> de aprender e contribuir  para projetos inovadores.</p>
+            <p className='text-xs indent-4 pb-2 md:text-sm md:px-3'>Profissional com 10 anos na indústria calçadista, evoluindo de Cronoanalista para <br />  RH. Experiência em  liderança, gestão de equipe e adaptação rápida a novos desafios. <br /> Busco transição  para TI Front-End, combinando habilidades de liderança com vontade <br /> de aprender e contribuir  para projetos inovadores.</p>
           </article>
           <article className='divide-y-2 divide-y-reverse'>
             <h3 className='text-sm font-black py-2 md:text-2xl'>Experiência</h3>
