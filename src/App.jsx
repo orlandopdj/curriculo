@@ -1,21 +1,36 @@
 import foto from './assets/orlando.jpeg'
 import { FaInbox, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaLinkedinIn, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import './App.css'
+import generatePDF, { Margin } from 'react-to-pdf'
+
+const personalizacao = {
+  method: 'open',
+  page: {
+    // margin is in MM, default is Margin.NONE = 0
+    margin: Margin.MEDIUM,
+    // default is 'A4'
+    format: 'A4',
+    // default is 'portrait'
+    orientation: 'landscape',
+  },
+}
+
+const CriarPDF = () => document.getElementById('conteudo');
 
 function App() {
 
   return (
-    <div>
+    <div id='conteudo'>
       <header className='flex flex-col md:flex md:flex-row items-center bg-cyan-950 md:max-h-40'>
         <div>
-          <img className='w-32 h-32 p-2 rounded-full md:rounded-none md:w-40 md:h-40 md:p-4' src={foto} alt="foto de orlando" />
+          <img className='w-32 h-32 rounded-full border-2 border-cyan-600 md:rounded-none md:border-2 md:border-cyan-600 md:w-40 md:h-40' src={foto} alt="foto de orlando" />
         </div>
         <div className='text-center md:p-8 md:text-start md:mt-4'>
           <h1 className='text-base md:text-4xl text-white'>Orlando Pinheiro Dias Junior</h1>
           <h2 className='text-xs text-gray-400 md:text-sm md:indent-4'>Desenvolvedor Front-End</h2>
           <div className='flex flex-col text-center p-2 md:flex-row md:gap-8 md:mt-6'>
             <div className='flex items-center gap-2'>
-              
+
               <FaInbox className='text-sm text-gray-400' /> <p className='text-sm text-gray-400'>orlandopdjr6@gmail.com</p>
             </div>
             <div className='flex items-center gap-2'>
@@ -27,7 +42,7 @@ function App() {
           </div>
         </div>
       </header>
-      
+
       <main className='flex divide-x-2 px-2'>
         <section className='text-left ml-2'>
           <article className='divide-y-2 divide-y-reverse'>
@@ -64,7 +79,7 @@ function App() {
               </ul>
             </p>
           </article>
- 
+
         </section>
         <section className='flex flex-col px-4'>
           <h3 className='text-sm font-black py-2 md:text-2xl'>Competências</h3>
@@ -80,15 +95,17 @@ function App() {
           <div className="mb-1 text-xs font-medium text-black md:text-sm">Inglês</div>
           <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
             <div className="bg-blue-600 h-1.5 rounded-full dark:bg-cyan-600 w-5"></div>
+
           </div>
 
         </section>
+
       </main>
       <footer className='bg-cyan-800'>
         <nav className='flex justify-center py-2 gap-5'>
-          <a href="https://www.instagram.com/orlandopdj" target='_blank'><FaInstagramSquare className='text-xl text-cyan-200 hover:text-cyan-300'/></a>
-          <a href="https://www.linkedin.com/in/orlandopdj/" target='_blank'><FaLinkedinIn className='text-xl text-cyan-200  hover:text-cyan-300'/></a>
-          <a href="https://github.com/orlandopdj" target='_blank'><FaGithub className='text-xl text-cyan-200  hover:text-cyan-300'/></a>
+          <a href="https://www.instagram.com/orlandopdj" target='_blank'><FaInstagramSquare className='text-xl text-cyan-200 hover:text-cyan-300' /></a>
+          <a href="https://www.linkedin.com/in/orlandopdj/" target='_blank'><FaLinkedinIn className='text-xl text-cyan-200  hover:text-cyan-300' /></a>
+          <a href="https://github.com/orlandopdj" target='_blank'><FaGithub className='text-xl text-cyan-200  hover:text-cyan-300' /></a>
         </nav>
       </footer>
     </div>
